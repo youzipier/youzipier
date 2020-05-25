@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/roma.js"></script>
+
+</head>
+<body>
+    <div id="f6fe81157bb3450cbd05fabe92c008f3" class="chart-container" style="width:900px; height:550px;"></div>
+    <script>
+        var chart_f6fe81157bb3450cbd05fabe92c008f3 = echarts.init(
+            document.getElementById('f6fe81157bb3450cbd05fabe92c008f3'), 'roma', {renderer: 'RenderType.CANVAS'});
+        var option_f6fe81157bb3450cbd05fabe92c008f3 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u786e\u8bca\u603b\u4eba\u6570",
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "world",
+            "data": [
+                {
+                    "name": "China",
+                    "value": 67933
+                },
+                {
+                    "name": "Canada",
+                    "value": 27980
+                },
+                {
+                    "name": "Brazil",
+                    "value": 205
+                },
+                {
+                    "name": "Russia",
+                    "value": 93
+                },
+                {
+                    "name": "United States",
+                    "value": 12300
+                },
+                {
+                    "name": "France",
+                    "value": 27980
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {},
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u786e\u8bca\u603b\u4eba\u6570"
+            ],
+            "selected": {
+                "\u786e\u8bca\u603b\u4eba\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u4e16\u754c\u5730\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 30000,
+        "inRange": {
+            "color": [
+                "#dbe3e3",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
+};
+        chart_f6fe81157bb3450cbd05fabe92c008f3.setOption(option_f6fe81157bb3450cbd05fabe92c008f3);
+    </script>
+</body>
+</html>
